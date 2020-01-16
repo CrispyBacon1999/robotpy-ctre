@@ -1,8 +1,0 @@
----
-
-functions:
-  Java_com_ctre_phoenix_motion_BuffTrajPointStreamJNI_Create1:
-  Java_com_ctre_phoenix_motion_BuffTrajPointStreamJNI_DestroyAll:
-  Java_com_ctre_phoenix_motion_BuffTrajPointStreamJNI_Destroy:
-  Java_com_ctre_phoenix_motion_BuffTrajPointStreamJNI_Clear:
-  Java_com_ctre_phoenix_motion_BuffTrajPointStreamJNI_Write:

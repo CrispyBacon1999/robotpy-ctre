@@ -5,33 +5,33 @@ requires = [
 ]
 
 [tool.robotpy-build]
-base_package = "ctre_wpi"
+base_package = "ctre"
 
-[tool.robotpy-build.wrappers."ctre_wpi".maven_lib_download]
-artifact_id = "wpiapi-cpp"
-group_id = "com.ctre.phoenix"
-repo_url = "http://devsite.ctr-electronics.com/maven/release"
-version = "5.17.4"
-libs = ["CTRE_Phoenix_WPI"]
+# [tool.robotpy-build.wrappers."ctre_wpi".maven_lib_download]
+# artifact_id = "wpiapi-cpp"
+# group_id = "com.ctre.phoenix"
+# repo_url = "http://devsite.ctr-electronics.com/maven/release"
+# version = "5.17.4"
+# libs = ["CTRE_Phoenix_WPI"]
 
-[tool.robotpy-build.wrappers."ctre_wpi"]
-name = "ctre_wpi"
+# [tool.robotpy-build.wrappers."ctre_wpi"]
+# name = "ctre_wpi"
 
-generate = [
-    # ctre/phoenix/motorcontrol
-    { WPI_MotorSafetyImplem = "ctre/phoenix/motorcontrol/WPI_MotorSafetyImplem.h" },
+# generate = [
+#     # ctre/phoenix/motorcontrol
+#     { WPI_MotorSafetyImplem = "ctre/phoenix/motorcontrol/WPI_MotorSafetyImplem.h" },
 
-    # ctre/phoenix/motorcontrol/can
-    { WPI_BaseMotorController = "ctre/phoenix/motorcontrol/can/WPI_BaseMotorController.h" },
-    { WPI_TalonFX = "ctre/phoenix/motorcontrol/can/WPI_TalonFX.h" },
-    { WPI_TalonSRX = "ctre/phoenix/motorcontrol/can/WPI_TalonSRX.h" },
-    { WPI_VictorSPX = "ctre/phoenix/motorcontrol/can/WPI_VictorSPX.h" },
+#     # ctre/phoenix/motorcontrol/can
+#     { WPI_BaseMotorController = "ctre/phoenix/motorcontrol/can/WPI_BaseMotorController.h" },
+#     { WPI_TalonFX = "ctre/phoenix/motorcontrol/can/WPI_TalonFX.h" },
+#     { WPI_TalonSRX = "ctre/phoenix/motorcontrol/can/WPI_TalonSRX.h" },
+#     { WPI_VictorSPX = "ctre/phoenix/motorcontrol/can/WPI_VictorSPX.h" },
 
-    # ctre/phoenix/tasking
-    { ButtonMonitor = "ctre/phoenix/tasking/ButtonMonitor.h" },
-]
+#     # ctre/phoenix/tasking
+#     { ButtonMonitor = "ctre/phoenix/tasking/ButtonMonitor.h" },
+# ]
 
-generation_data = "gen"
+# generation_data = "gen"
 
 
 [tool.robotpy-build.wrappers."ctre".maven_lib_download]
@@ -107,96 +107,96 @@ generate = [
 
 generation_data = "gen"
 
-[tool.robotpy-build.wrappers."ctre_cci".maven_lib_download]
-artifact_id = "cci"
-group_id = "com.ctre.phoenix"
-repo_url = "http://devsite.ctr-electronics.com/maven/release"
-version = "5.17.4"
-libs = ["CTRE_PhoenixCCI"]
+# [tool.robotpy-build.wrappers."ctre_cci".maven_lib_download]
+# artifact_id = "cci"
+# group_id = "com.ctre.phoenix"
+# repo_url = "http://devsite.ctr-electronics.com/maven/release"
+# version = "5.17.4"
+# libs = ["CTRE_PhoenixCCI"]
 
-[tool.robotpy-build.wrappers."ctre_cci"]
-name = "ctre_cci"
+# [tool.robotpy-build.wrappers."ctre_cci"]
+# name = "ctre_cci"
 
-generate = [
-    # ctre/phoenix
-    { CANifierControlFrame = "ctre/phoenix/CANifierControlFrame.h" },
-    { CANifierFaults = "ctre/phoenix/CANifierFaults.h" },
-    { CANifierStatusFrame = "ctre/phoenix/CANifierStatusFrame.h" },
-    { CANifierStickyFaults = "ctre/phoenix/CANifierStickyFaults.h" },
-    { CANifierVelocityMeasPeriod = "ctre/phoenix/CANifierVelocityMeasPeriod.h" },
-    { autocache = "ctre/phoenix/autocache.h" },
+# generate = [
+#     # ctre/phoenix
+#     { CANifierControlFrame = "ctre/phoenix/CANifierControlFrame.h" },
+#     { CANifierFaults = "ctre/phoenix/CANifierFaults.h" },
+#     { CANifierStatusFrame = "ctre/phoenix/CANifierStatusFrame.h" },
+#     { CANifierStickyFaults = "ctre/phoenix/CANifierStickyFaults.h" },
+#     { CANifierVelocityMeasPeriod = "ctre/phoenix/CANifierVelocityMeasPeriod.h" },
+#     { autocache = "ctre/phoenix/autocache.h" },
 
-    # ctre/phoenix/cci
-    { BuffTrajPointStream_CCI = "ctre/phoenix/cci/BuffTrajPointStream_CCI.h" },
-    { CANCoder_CCI = "ctre/phoenix/cci/CANCoder_CCI.h" },
-    { CANifier_CCI = "ctre/phoenix/cci/CANifier_CCI.h" },
-    { Logger_CCI = "ctre/phoenix/cci/Logger_CCI.h" },
-    { MotController_CCI = "ctre/phoenix/cci/MotController_CCI.h" },
-    { PigeonIMU_CCI = "ctre/phoenix/cci/PigeonIMU_CCI.h" },
-    { PlatformCAN_CCI = "ctre/phoenix/cci/PlatformCAN_CCI.h" },
-    { Platform_CCI = "ctre/phoenix/cci/Platform_CCI.h" },
-    { Unmanaged_CCI = "ctre/phoenix/cci/Unmanaged_CCI.h" },
+#     # ctre/phoenix/cci
+#     { BuffTrajPointStream_CCI = "ctre/phoenix/cci/BuffTrajPointStream_CCI.h" },
+#     { CANCoder_CCI = "ctre/phoenix/cci/CANCoder_CCI.h" },
+#     { CANifier_CCI = "ctre/phoenix/cci/CANifier_CCI.h" },
+#     { Logger_CCI = "ctre/phoenix/cci/Logger_CCI.h" },
+#     { MotController_CCI = "ctre/phoenix/cci/MotController_CCI.h" },
+#     { PigeonIMU_CCI = "ctre/phoenix/cci/PigeonIMU_CCI.h" },
+#     { PlatformCAN_CCI = "ctre/phoenix/cci/PlatformCAN_CCI.h" },
+#     { Platform_CCI = "ctre/phoenix/cci/Platform_CCI.h" },
+#     { Unmanaged_CCI = "ctre/phoenix/cci/Unmanaged_CCI.h" },
 
-    # ctre/phoenix/core
-    { GadgeteerUartClient = "ctre/phoenix/core/GadgeteerUartClient.h" },
+#     # ctre/phoenix/core
+#     { GadgeteerUartClient = "ctre/phoenix/core/GadgeteerUartClient.h" },
 
-    # ctre/phoenix/jni
-    { com_ctre_phoenix_CANifierJNI = "ctre/phoenix/jni/com_ctre_phoenix_CANifierJNI.h" },
-    { com_ctre_phoenix_CTRLoggerJNI = "ctre/phoenix/jni/com_ctre_phoenix_CTRLoggerJNI.h" },
-    { com_ctre_phoenix_motion_BuffTrajPointStreamJNI = "ctre/phoenix/jni/com_ctre_phoenix_motion_BuffTrajPointStreamJNI.h" },
-    { com_ctre_phoenix_motorcontrol_can_MotControllerJNI = "ctre/phoenix/jni/com_ctre_phoenix_motorcontrol_can_MotControllerJNI.h" },
-    { com_ctre_phoenix_platform_PlatformJNI = "ctre/phoenix/jni/com_ctre_phoenix_platform_PlatformJNI.h" },
-    { com_ctre_phoenix_platform_can_PlatformCANJNI = "ctre/phoenix/jni/com_ctre_phoenix_platform_can_PlatformCANJNI.h" },
-    { com_ctre_phoenix_sensors_CANCoderJNI = "ctre/phoenix/jni/com_ctre_phoenix_sensors_CANCoderJNI.h" },
-    { com_ctre_phoenix_sensors_PigeonImuJNI = "ctre/phoenix/jni/com_ctre_phoenix_sensors_PigeonImuJNI.h" },
-    { com_ctre_phoenix_unmanaged_UnmanagedJNI = "ctre/phoenix/jni/com_ctre_phoenix_unmanaged_UnmanagedJNI.h" },
+#     # ctre/phoenix/jni
+#     { com_ctre_phoenix_CANifierJNI = "ctre/phoenix/jni/com_ctre_phoenix_CANifierJNI.h" },
+#     { com_ctre_phoenix_CTRLoggerJNI = "ctre/phoenix/jni/com_ctre_phoenix_CTRLoggerJNI.h" },
+#     { com_ctre_phoenix_motion_BuffTrajPointStreamJNI = "ctre/phoenix/jni/com_ctre_phoenix_motion_BuffTrajPointStreamJNI.h" },
+#     { com_ctre_phoenix_motorcontrol_can_MotControllerJNI = "ctre/phoenix/jni/com_ctre_phoenix_motorcontrol_can_MotControllerJNI.h" },
+#     { com_ctre_phoenix_platform_PlatformJNI = "ctre/phoenix/jni/com_ctre_phoenix_platform_PlatformJNI.h" },
+#     { com_ctre_phoenix_platform_can_PlatformCANJNI = "ctre/phoenix/jni/com_ctre_phoenix_platform_can_PlatformCANJNI.h" },
+#     { com_ctre_phoenix_sensors_CANCoderJNI = "ctre/phoenix/jni/com_ctre_phoenix_sensors_CANCoderJNI.h" },
+#     { com_ctre_phoenix_sensors_PigeonImuJNI = "ctre/phoenix/jni/com_ctre_phoenix_sensors_PigeonImuJNI.h" },
+#     { com_ctre_phoenix_unmanaged_UnmanagedJNI = "ctre/phoenix/jni/com_ctre_phoenix_unmanaged_UnmanagedJNI.h" },
 
-    # ctre/phoenix/motion
-    { MotionProfileStatus = "ctre/phoenix/motion/MotionProfileStatus.h" },
-    { SetValueMotionProfile = "ctre/phoenix/motion/SetValueMotionProfile.h" },
-    { TrajectoryPoint = "ctre/phoenix/motion/TrajectoryPoint.h" },
+#     # ctre/phoenix/motion
+#     { MotionProfileStatus = "ctre/phoenix/motion/MotionProfileStatus.h" },
+#     { SetValueMotionProfile = "ctre/phoenix/motion/SetValueMotionProfile.h" },
+#     { TrajectoryPoint = "ctre/phoenix/motion/TrajectoryPoint.h" },
 
-    # ctre/phoenix/motorcontrol
-    { ControlFrame = "ctre/phoenix/motorcontrol/ControlFrame.h" },
-    { ControlMode = "ctre/phoenix/motorcontrol/ControlMode.h" },
-    { DemandType = "ctre/phoenix/motorcontrol/DemandType.h" },
-    { Faults = "ctre/phoenix/motorcontrol/Faults.h" },
-    { FeedbackDevice = "ctre/phoenix/motorcontrol/FeedbackDevice.h" },
-    { FollowerType = "ctre/phoenix/motorcontrol/FollowerType.h" },
-    { InvertType = "ctre/phoenix/motorcontrol/InvertType.h" },
-    { LimitSwitchType = "ctre/phoenix/motorcontrol/LimitSwitchType.h" },
-    { MotorCommutation = "ctre/phoenix/motorcontrol/MotorCommutation.h" },
-    { NeutralMode = "ctre/phoenix/motorcontrol/NeutralMode.h" },
-    { RemoteSensorSource = "ctre/phoenix/motorcontrol/RemoteSensorSource.h" },
-    { SensorTerm = "ctre/phoenix/motorcontrol/SensorTerm.h" },
-    { StatorCurrentLimitConfiguration = "ctre/phoenix/motorcontrol/StatorCurrentLimitConfiguration.h" },
-    { StatusFrame = "ctre/phoenix/motorcontrol/StatusFrame.h" },
-    { StickyFaults = "ctre/phoenix/motorcontrol/StickyFaults.h" },
-    { SupplyCurrentLimitConfiguration = "ctre/phoenix/motorcontrol/SupplyCurrentLimitConfiguration.h" },
-    { VelocityMeasPeriod = "ctre/phoenix/motorcontrol/VelocityMeasPeriod.h" },
+#     # ctre/phoenix/motorcontrol
+#     { ControlFrame = "ctre/phoenix/motorcontrol/ControlFrame.h" },
+#     { ControlMode = "ctre/phoenix/motorcontrol/ControlMode.h" },
+#     { DemandType = "ctre/phoenix/motorcontrol/DemandType.h" },
+#     { Faults = "ctre/phoenix/motorcontrol/Faults.h" },
+#     { FeedbackDevice = "ctre/phoenix/motorcontrol/FeedbackDevice.h" },
+#     { FollowerType = "ctre/phoenix/motorcontrol/FollowerType.h" },
+#     { InvertType = "ctre/phoenix/motorcontrol/InvertType.h" },
+#     { LimitSwitchType = "ctre/phoenix/motorcontrol/LimitSwitchType.h" },
+#     { MotorCommutation = "ctre/phoenix/motorcontrol/MotorCommutation.h" },
+#     { NeutralMode = "ctre/phoenix/motorcontrol/NeutralMode.h" },
+#     { RemoteSensorSource = "ctre/phoenix/motorcontrol/RemoteSensorSource.h" },
+#     { SensorTerm = "ctre/phoenix/motorcontrol/SensorTerm.h" },
+#     { StatorCurrentLimitConfiguration = "ctre/phoenix/motorcontrol/StatorCurrentLimitConfiguration.h" },
+#     { StatusFrame = "ctre/phoenix/motorcontrol/StatusFrame.h" },
+#     { StickyFaults = "ctre/phoenix/motorcontrol/StickyFaults.h" },
+#     { SupplyCurrentLimitConfiguration = "ctre/phoenix/motorcontrol/SupplyCurrentLimitConfiguration.h" },
+#     { VelocityMeasPeriod = "ctre/phoenix/motorcontrol/VelocityMeasPeriod.h" },
 
-    # ctre/phoenix
-    { paramEnum = "ctre/phoenix/paramEnum.h" },
+#     # ctre/phoenix
+#     { paramEnum = "ctre/phoenix/paramEnum.h" },
 
-    # ctre/phoenix/sensors
-    { AbsoluteSensorRange = "ctre/phoenix/sensors/AbsoluteSensorRange.h" },
-    { CANCoderFaults = "ctre/phoenix/sensors/CANCoderFaults.h" },
-    { CANCoderStatusFrame = "ctre/phoenix/sensors/CANCoderStatusFrame.h" },
-    { CANCoderStickyFaults = "ctre/phoenix/sensors/CANCoderStickyFaults.h" },
-    { MagnetFieldStrength = "ctre/phoenix/sensors/MagnetFieldStrength.h" },
-    { PigeonIMU_ControlFrame = "ctre/phoenix/sensors/PigeonIMU_ControlFrame.h" },
-    { PigeonIMU_Faults = "ctre/phoenix/sensors/PigeonIMU_Faults.h" },
-    { PigeonIMU_StatusFrame = "ctre/phoenix/sensors/PigeonIMU_StatusFrame.h" },
-    { PigeonIMU_StickyFaults = "ctre/phoenix/sensors/PigeonIMU_StickyFaults.h" },
-    { SensorInitializationStrategy = "ctre/phoenix/sensors/SensorInitializationStrategy.h" },
-    { SensorTimeBase = "ctre/phoenix/sensors/SensorTimeBase.h" },
-    { SensorVelocityMeasPeriod = "ctre/phoenix/sensors/SensorVelocityMeasPeriod.h" },
+#     # ctre/phoenix/sensors
+#     { AbsoluteSensorRange = "ctre/phoenix/sensors/AbsoluteSensorRange.h" },
+#     { CANCoderFaults = "ctre/phoenix/sensors/CANCoderFaults.h" },
+#     { CANCoderStatusFrame = "ctre/phoenix/sensors/CANCoderStatusFrame.h" },
+#     { CANCoderStickyFaults = "ctre/phoenix/sensors/CANCoderStickyFaults.h" },
+#     { MagnetFieldStrength = "ctre/phoenix/sensors/MagnetFieldStrength.h" },
+#     { PigeonIMU_ControlFrame = "ctre/phoenix/sensors/PigeonIMU_ControlFrame.h" },
+#     { PigeonIMU_Faults = "ctre/phoenix/sensors/PigeonIMU_Faults.h" },
+#     { PigeonIMU_StatusFrame = "ctre/phoenix/sensors/PigeonIMU_StatusFrame.h" },
+#     { PigeonIMU_StickyFaults = "ctre/phoenix/sensors/PigeonIMU_StickyFaults.h" },
+#     { SensorInitializationStrategy = "ctre/phoenix/sensors/SensorInitializationStrategy.h" },
+#     { SensorTimeBase = "ctre/phoenix/sensors/SensorTimeBase.h" },
+#     { SensorVelocityMeasPeriod = "ctre/phoenix/sensors/SensorVelocityMeasPeriod.h" },
 
-    # ctre/phoenix/unmanaged
-    { Unmanaged = "ctre/phoenix/unmanaged/Unmanaged.h" },
-]
+#     # ctre/phoenix/unmanaged
+#     { Unmanaged = "ctre/phoenix/unmanaged/Unmanaged.h" },
+# ]
 
-generation_data = "gen"
+# generation_data = "gen"
 
 # [tool.robotpy-build.wrappers."ctre_diagnostics".maven_lib_download]
 # artifact_id = "diagnostics"
