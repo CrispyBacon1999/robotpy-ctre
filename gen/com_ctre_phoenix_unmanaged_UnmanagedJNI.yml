@@ -1,0 +1,9 @@
+---
+
+functions:
+  Java_com_ctre_phoenix_unmanaged_UnmanagedJNI_JNI_1FeedEnable:
+  Java_com_ctre_phoenix_unmanaged_UnmanagedJNI_JNI_1GetEnableState:
+  Java_com_ctre_phoenix_unmanaged_UnmanagedJNI_JNI_1GetPhoenixVersion:
+  Java_com_ctre_phoenix_unmanaged_UnmanagedJNI_JNI_1LoadPhoenix:
+  Java_com_ctre_phoenix_unmanaged_UnmanagedJNI_JNI_1SetPhoenixDiagnosticsStartTime:
+  Java_com_ctre_phoenix_unmanaged_UnmanagedJNI_JNI_1IoControl:

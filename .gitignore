@@ -9,8 +9,13 @@ __pycache__
 build
 dist
 
-ctre/version.py
-ctre/_impl/autogen
+ctre
+ctre_canutils
+ctre_core
+ctre_platform
+ctre_wpi
+ctre_diagnostics
+ctre_cci
 
 
 docs/_build

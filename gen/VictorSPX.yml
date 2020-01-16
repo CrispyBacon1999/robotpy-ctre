@@ -1,0 +1,61 @@
+---
+
+classes:
+  VictorSPXPIDSetConfiguration:
+    shared_ptr: true
+    attributes:
+      selectedFeedbackSensor:
+    methods:
+      VictorSPXPIDSetConfiguration:
+      toString:
+        overloads:
+          "":
+          std::string:
+  VictorSPXPIDSetConfigUtil:
+    shared_ptr: true
+    methods:
+      SelectedFeedbackSensorDifferent:
+      SelectedFeedbackCoefficientDifferent:
+  VictorSPXConfiguration:
+    shared_ptr: true
+    attributes:
+      primaryPID:
+      auxiliaryPID:
+      forwardLimitSwitchSource:
+      reverseLimitSwitchSource:
+      forwardLimitSwitchDeviceID:
+      reverseLimitSwitchDeviceID:
+      forwardLimitSwitchNormal:
+      reverseLimitSwitchNormal:
+      sum0Term:
+      sum1Term:
+      diff0Term:
+      diff1Term:
+    methods:
+      VictorSPXConfiguration:
+      toString:
+        overloads:
+          "":
+          std::string:
+  VictorConfigUtil:
+    shared_ptr: true
+    methods:
+      ForwardLimitSwitchSourceDifferent:
+      ReverseLimitSwitchSourceDifferent:
+      ForwardLimitSwitchDeviceIDDifferent:
+      ReverseLimitSwitchDeviceIDDifferent:
+      ForwardLimitSwitchNormalDifferent:
+      ReverseLimitSwitchNormalDifferent:
+      Sum0TermDifferent:
+      Sum1TermDifferent:
+      Diff0TermDifferent:
+      Diff1TermDifferent:
+      ForwardLimitSwitchDifferent:
+      ReverseLimitSwitchDifferent:
+  VictorSPX:
+    shared_ptr: true
+    methods:
+      VictorSPX:
+      GetPIDConfigs:
+      ConfigAllSettings:
+      GetAllConfigs:

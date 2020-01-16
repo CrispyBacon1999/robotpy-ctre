@@ -1,0 +1,95 @@
+---
+
+classes:
+  BaseTalonPIDSetConfiguration:
+    shared_ptr: true
+    attributes:
+      selectedFeedbackSensor:
+    methods:
+      BaseTalonPIDSetConfiguration:
+      toString:
+        overloads:
+          "":
+          std::string:
+  BaseTalonPIDSetConfigUtil:
+    shared_ptr: true
+    methods:
+      SelectedFeedbackSensorDifferent:
+      SelectedFeedbackCoefficientDifferent:
+  BaseTalonConfiguration:
+    shared_ptr: true
+    attributes:
+      primaryPID:
+      auxiliaryPID:
+      forwardLimitSwitchSource:
+      reverseLimitSwitchSource:
+      forwardLimitSwitchDeviceID:
+      reverseLimitSwitchDeviceID:
+      forwardLimitSwitchNormal:
+      reverseLimitSwitchNormal:
+      sum0Term:
+      sum1Term:
+      diff0Term:
+      diff1Term:
+    methods:
+      BaseTalonConfiguration:
+      toString:
+        overloads:
+          "":
+          std::string:
+  BaseTalonConfigUtil:
+    shared_ptr: true
+    methods:
+      ForwardLimitSwitchSourceDifferent:
+      ReverseLimitSwitchSourceDifferent:
+      ForwardLimitSwitchDeviceIDDifferent:
+      ReverseLimitSwitchDeviceIDDifferent:
+      ForwardLimitSwitchNormalDifferent:
+      ReverseLimitSwitchNormalDifferent:
+      Sum0TermDifferent:
+      Sum1TermDifferent:
+      Diff0TermDifferent:
+      Diff1TermDifferent:
+      ForwardLimitSwitchDifferent:
+      ReverseLimitSwitchDifferent:
+  BaseTalon:
+    shared_ptr: true
+    methods:
+      BaseTalon:
+        overloads:
+          int, char*:
+          "":
+      ConfigSelectedFeedbackSensor:
+        overloads:
+          FeedbackDevice, int, int:
+          RemoteFeedbackDevice, int, int:
+      SetStatusFramePeriod:
+        overloads:
+          StatusFrameEnhanced, uint8_t, int:
+          StatusFrame, uint8_t, int:
+      GetStatusFramePeriod:
+        overloads:
+          StatusFrameEnhanced, int:
+          StatusFrame, int:
+      GetOutputCurrent:
+      GetStatorCurrent:
+      GetSupplyCurrent:
+      ConfigVelocityMeasurementPeriod:
+      ConfigVelocityMeasurementWindow:
+      ConfigForwardLimitSwitchSource:
+        overloads:
+          LimitSwitchSource, LimitSwitchNormal, int:
+          RemoteLimitSwitchSource, LimitSwitchNormal, int, int:
+      ConfigReverseLimitSwitchSource:
+        overloads:
+          LimitSwitchSource, LimitSwitchNormal, int:
+          RemoteLimitSwitchSource, LimitSwitchNormal, int, int:
+      ConfigSupplyCurrentLimit:
+      IsFwdLimitSwitchClosed:
+      IsRevLimitSwitchClosed:
+      GetTalonSRXSensorCollection:
+      GetTalonFXSensorCollection:
+      ConfigurePID:
+      GetPIDConfigs:
+      BaseTalonConfigAllSettings:
+      BaseTalonGetAllConfigs:

@@ -1,0 +1,8 @@
+---
+
+functions:
+  Java_com_ctre_phoenix_CTRLoggerJNI_JNI_1Logger_1Close:
+  Java_com_ctre_phoenix_CTRLoggerJNI_JNI_1Logger_1Log:
+  Java_com_ctre_phoenix_CTRLoggerJNI_JNI_1Logger_1Open:
+  Java_com_ctre_phoenix_CTRLoggerJNI_JNI_1Logger_1GetShort:
+  Java_com_ctre_phoenix_CTRLoggerJNI_JNI_1Logger_1GetLong:

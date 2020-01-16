@@ -1,0 +1,5 @@
+---
+
+functions:
+  Java_com_ctre_phoenix_platform_can_PlatformCANJNI_JNI_1SetCANInterface:
+  Java_com_ctre_phoenix_platform_can_PlatformCANJNI_JNI_1SetAutocacheLevel:

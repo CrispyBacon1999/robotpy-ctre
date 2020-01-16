@@ -1,0 +1,66 @@
+---
+
+classes:
+  TalonFXPIDSetConfiguration:
+    shared_ptr: true
+  TalonFXConfiguration:
+    shared_ptr: true
+    attributes:
+      supplyCurrLimit:
+      statorCurrLimit:
+      motorCommutation:
+      absoluteSensorRange:
+      integratedSensorOffsetDegrees:
+      initializationStrategy:
+    methods:
+      TalonFXConfiguration:
+      toString:
+        overloads:
+          "":
+          std::string:
+  TalonFXConfigUtil:
+    shared_ptr: true
+    methods:
+      SupplyCurrentLimitDifferent:
+      StatorCurrentDurationDifferent:
+      MotorCommutationDifferent:
+      AbsoluteSensorRangeDifferent:
+      IntegratedSensorOffsetDegreesDifferent:
+      InitializationStrategyDifferent:
+  TalonFX:
+    shared_ptr: true
+    methods:
+      TalonFX:
+        overloads:
+          int:
+          "":
+      Set:
+        overloads:
+          TalonFXControlMode, double:
+          TalonFXControlMode, double, DemandType, double:
+          ControlMode, double:
+          ControlMode, double, DemandType, double:
+      SetInverted:
+        overloads:
+          TalonFXInvertType:
+          InvertType:
+          bool:
+      ConfigSelectedFeedbackSensor:
+        overloads:
+          TalonFXFeedbackDevice, int, int:
+          FeedbackDevice, int, int:
+          RemoteFeedbackDevice, int, int:
+      ConfigSupplyCurrentLimit:
+      ConfigStatorCurrentLimit:
+      ConfigGetSupplyCurrentLimit:
+      ConfigGetStatorCurrentLimit:
+      GetSensorCollection:
+      ConfigurePID:
+      GetPIDConfigs:
+      ConfigAllSettings:
+      GetAllConfigs:
+      ConfigMotorCommutation:
+      ConfigGetMotorCommutation:
+      ConfigIntegratedSensorAbsoluteRange:
+      ConfigIntegratedSensorOffset:
+      ConfigIntegratedSensorInitializationStrategy:

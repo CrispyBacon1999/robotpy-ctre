@@ -1,0 +1,8 @@
+---
+
+functions:
+  Java_com_ctre_phoenix_platform_PlatformJNI_JNI_1SimCreate:
+  Java_com_ctre_phoenix_platform_PlatformJNI_JNI_1SimDestroy:
+  Java_com_ctre_phoenix_platform_PlatformJNI_JNI_1SimDestroyAll:
+  Java_com_ctre_phoenix_platform_PlatformJNI_JNI_1SimConfigGet:
+  Java_com_ctre_phoenix_platform_PlatformJNI_JNI_1SimConfigSet:

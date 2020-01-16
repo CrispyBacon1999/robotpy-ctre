@@ -1,0 +1,45 @@
+---
+
+classes:
+  TalonSRXPIDSetConfiguration:
+    shared_ptr: true
+  TalonSRXConfiguration:
+    shared_ptr: true
+    attributes:
+      peakCurrentLimit:
+      peakCurrentDuration:
+      continuousCurrentLimit:
+    methods:
+      TalonSRXConfiguration:
+      toString:
+        overloads:
+          "":
+          std::string:
+  TalonSRXConfigUtil:
+    shared_ptr: true
+    methods:
+      PeakCurrentLimitDifferent:
+      PeakCurrentDurationDifferent:
+      ContinuousCurrentLimitDifferent:
+  TalonSRX:
+    shared_ptr: true
+    methods:
+      TalonSRX:
+        overloads:
+          int:
+          "":
+      ConfigSelectedFeedbackSensor:
+        overloads:
+          TalonSRXFeedbackDevice, int, int:
+          FeedbackDevice, int, int:
+          RemoteFeedbackDevice, int, int:
+      ConfigSupplyCurrentLimit:
+      ConfigPeakCurrentLimit:
+      ConfigPeakCurrentDuration:
+      ConfigContinuousCurrentLimit:
+      EnableCurrentLimit:
+      GetSensorCollection:
+      ConfigurePID:
+      GetPIDConfigs:
+      ConfigAllSettings:
+      GetAllConfigs:
